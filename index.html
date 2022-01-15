@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p = prompt('nhap so tien vay :'); // số tiền gốc
+    let r = 7/100 ; // lãi suất
+    let n = 12 ; // số lần lãi đc gộp
+    let S1 ; // tiền lãi một năm
+    let S2 ; // tiền lãi 2 năm
+    let Sn ; // tiền lãi n năm
+
+    S1 = p * r ;
+    S2 = p + 2 * S1 ;
+    Sn = p + n * S1 ;
+
+    console.log( ' sau 1 năm : ' , S1) ;
+    console.log( ' sau 2 năm : ' , S2) ;
+    console.log( ' sau n năm: ' , Sn) ;
+
+    document.write('sau 1 năm : ' , S1) ;
+    document.write('<br/>') ;
+    document.write('sau 2 năm : ' , S2 ) ;
+    document.write('<br/>') ;
+    document.write('sau n năm : ' , Sn ) ;
+    document.write('<br/>') ;
+
+</script>
+</body>
+</html>
